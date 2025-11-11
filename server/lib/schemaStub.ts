@@ -1,20 +1,24 @@
 // runtime + compile-time stub for schema
-export const Trip = {};
-export const Signup = {};
-export const TripsResponse = {};
-export const SignupsResponse = {};
-export const RandomizeResponse = {};
-export const ApproveRandomizationResponse = {};
-export const AddFromWaitlistResponse = {};
-export const DropParticipantResponse = {};
-export const randomizeRequestSchema = {};
-export const approveRandomizationRequestSchema = {};
-export const addFromWaitlistRequestSchema = {};
-export const addDriverRequestSchema = {};
-export const addNonDriverRequestSchema = {};
-export const reAddParticipantRequestSchema = {};
-export const dropParticipantRequestSchema = {};
-export const User = {};
-export const InsertUser = {};
+
+// export as types so TS doesn't confuse them as runtime values
+export type Trip = Record<string, any>;
+export type Signup = Record<string, any>;
+export type TripsResponse = Record<string, any>;
+export type SignupsResponse = Record<string, any>;
+export type RandomizeResponse = Record<string, any>;
+export type ApproveRandomizationResponse = Record<string, any>;
+export type AddFromWaitlistResponse = Record<string, any>;
+export type DropParticipantResponse = Record<string, any>;
+export type User = Record<string, any>;
+export type InsertUser = Record<string, any>;
+
+export const randomizeRequestSchema: any = {};
+export const approveRandomizationRequestSchema: any = {};
+export const addFromWaitlistRequestSchema: any = {};
+export const addDriverRequestSchema: any = {};
+export const addNonDriverRequestSchema: any = {};
+export const reAddParticipantRequestSchema: any = {};
+export const dropParticipantRequestSchema: any = {};
+
 export default {};
 
