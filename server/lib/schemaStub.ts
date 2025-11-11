@@ -1,4 +1,4 @@
-// runtime stub for @shared/schema.js
+// runtime + compile-time stub for schema
 export const Trip = {};
 export const Signup = {};
 export const TripsResponse = {};
@@ -17,3 +17,4 @@ export const dropParticipantRequestSchema = {};
 export const User = {};
 export const InsertUser = {};
 export default {};
+
