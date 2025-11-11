@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "imports": {
+  "@shared/schema.js": "./shared/schema.js"
+},
   "_moduleAliases": {
   "@shared/schema.js": "./server/lib/schemaStub.js"
 },
