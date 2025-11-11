@@ -7,7 +7,7 @@ import {
   fetchTripById,
   fetchTripSignups,
   updateSignup,
-} from "./lib/airtable";
+} from "./lib/airtable.js";
 import {
   type TripsResponse,
   type SignupsResponse,
@@ -23,7 +23,7 @@ import {
   addNonDriverRequestSchema,
   reAddParticipantRequestSchema,
   dropParticipantRequestSchema,
-} from "@shared/schema";
+} from "@shared/schema.js";
 
 // In-memory cache for proposed randomizations with 10-minute TTL
 interface ProposedRoster {
