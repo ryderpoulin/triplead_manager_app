@@ -5,10 +5,13 @@ import { createServer as createViteServer, createLogger } from "vite";
 import { type Server } from "http";
 import { nanoid } from "nanoid";
 
+import type { LogLevel } from "vite";
+
 const viteConfig = {
   root: process.cwd(),
-  logLevel: "info"
+  logLevel: "info" as LogLevel
 };
+
 
 const viteLogger = createLogger();
 
