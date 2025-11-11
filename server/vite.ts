@@ -3,9 +3,12 @@ import fs from "fs";
 import path from "path";
 import { createServer as createViteServer, createLogger } from "vite";
 import { type Server } from "http";
-import viteConfig from "../vite.config.ts";
 import { nanoid } from "nanoid";
 
+const viteConfig = {
+  root: process.cwd(),
+  logLevel: "info"
+};
 
 const viteLogger = createLogger();
 
