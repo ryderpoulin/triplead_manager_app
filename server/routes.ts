@@ -23,7 +23,7 @@ import {
   addNonDriverRequestSchema,
   reAddParticipantRequestSchema,
   dropParticipantRequestSchema,
-} from "@shared/schema.js";
+} from "../lib/schemaStub.js";
 
 // In-memory cache for proposed randomizations with 10-minute TTL
 interface ProposedRoster {
