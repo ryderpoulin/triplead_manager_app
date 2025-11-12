@@ -11,8 +11,7 @@
 },
   "scripts": {
     "dev": "NODE_ENV=development tsx server/index.ts",
-    "build": "npm run build:client && tsc",
-    "build:client": "cd client && npm install && npm run build",
+    "build": "tsc",
     "start": "NODE_ENV=production node dist/server/index.js",
     "check": "tsc --noEmit",
     "db:push": "drizzle-kit push"
