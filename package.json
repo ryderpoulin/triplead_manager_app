@@ -11,10 +11,9 @@
 },
   "scripts": {
     "dev": "NODE_ENV=development tsx server/index.ts",
-    "build": "tsc",
-    "start": "NODE_ENV=production node dist/server/index.js",
-    "check": "tsc --noEmit",
-    "db:push": "drizzle-kit push"
+    "build:client": "cd client && npm install && npm run build",
+    "build": "npm run build:client && tsc",
+    "start": "NODE_ENV=production node dist/server/index.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
