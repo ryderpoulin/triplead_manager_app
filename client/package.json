@@ -4,10 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development tsx server/index.ts",
-    "build:client": "cd client && npm install && npm run build",
-    "build": "npm run build:client && tsc",
-    "start": "NODE_ENV=production node dist/server/index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
